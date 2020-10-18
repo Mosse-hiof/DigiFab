@@ -1,7 +1,3 @@
-int buttons[6];
-
-int buttons[0] = 2;
-
 int notes[] = {262,294,330,349};
 
 
@@ -23,11 +19,11 @@ void loop() {
     tone(8, notes[1]);
   }
 
-  elseif(keyVal >= 505 && keyVal <= 515){
+  else if(keyVal >= 505 && keyVal <= 515){
     tone(8, notes[2]);   
   } 
 
-  elseif(keyVal >= 5 && keyVal <= 10){
+  else if(keyVal >= 5 && keyVal <= 10){
     tone(8, notes[3]);  
   }
 

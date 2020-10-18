@@ -28,22 +28,22 @@ void loop() {
   greenSensorValue = analogRead(greenSensorPin);
   delay(5);
   blueSensorValue = analogRead(blueSensorPin);
-  Serial.print(“Raw Sensor Values \t Red: “);
+  Serial.print("Raw Sensor Values \t Red: ");
   Serial.print(redSensorValue);
-  Serial.print(“\t Green: “);
+  Serial.print("\t Green: ");
   Serial.print(greenSensorValue);
-  Serial.print(“\t Blue: “);
+  Serial.print("\t Blue: ");
   Serial.println(blueSensorValue);
 
   redValue = redSensorValue/4;
   greenValue = greenSensorValue/4;
   blueValue = blueSensorValue/4;
 
-  Serial.print(“Mapped Sensor Values \t Red: “);
+  Serial.print("Mapped Sensor Values \t Red: ");
   Serial.print(redValue);
-  Serial.print(“\t Green: “);
+  Serial.print("\t Green: ");
   Serial.print(greenValue);
-  Serial.print(“\t Blue: “);
+  Serial.print("\t Blue: ");
   Serial.println(blueValue);
 
   analogWrite(redLEDPin, redValue);
